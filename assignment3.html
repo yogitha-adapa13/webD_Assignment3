@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table CheckList</title>
+    <link rel="icon" type="media/jpeg" href="\media\favicon.jpeg">
+    <link rel="stylesheet" type="text/css" href="table.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="loadfunc()">
+    <header>
+        <h1>
+            <font color="black"><center>Yogitha Adapa - 002822997 </center></font><br>
+        </h1>
+    </header><br><br>
+<div id="namediv">
+    
+    <table id="myTable">
+        <tr>
+            <th></th>
+            <th>STUDENT</th>
+            <th>ADVISOR</th>
+            <th>AWARD<br/>STATUS</th>
+            <th>SEMESTER</th>
+            <th>TYPE</th>
+            <th>BUDGET<br />#</th>
+            <th>PERCENTAGE</th>
+            <th class="editcol" id="edith">EDIT</th>
+            <th class="editcol" id="delh">DELETE</th>
+        </tr>
+        <tr id="stu_1">
+            <td><input type="checkbox" name='chk_1' id='chk_1' onClick='callcheck(1)'/><br /><br /><a onclick="togglediv(1)"><img src="/media_assignment3/down.png" width="25px" /></a></td>
+            <td>Student 1</td>
+            <td>Teacher 1</td>
+            <td>Approved</td>
+            <td>Fall</td>
+            <td>TA</td>
+            <td>12345</td>
+            <td>100%</td>
+            <td class="editcol" id="editcol_1"><input type="button" name="edit" value="Edit" id="edit_1" onclick="editrow(1);"></td>
+            <td class="editcol" id="delcol_1"><input type="button" name="delete" value="Delete" id="del_1" onclick="delrow(1);"></td>
+        </tr>
+        <tr id="row_1" class="dropDownTextArea"><td colspan="9">
+            Advisor:<br /><br />
+            Award Details<br />
+            Summer 1-2014(TA)<br />
+            Budget Number: <br />
+            Tuition Number: <br />
+            Comments:<br /><br /><br />
+            Award Status:<br /><br /><br />
+        </td><td></td></tr>
+        </table>    
+        <br><br>
+    <center><input type="button" name="submit" value="SUBMIT SELECTED AWARDS" id="subbtn">&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" name="submit" value="Add New Student" id="addnew" onclick="addnew();"></center>
+</div>
+<script src="script3.js"></script>
+   
+</body>
+</html>
